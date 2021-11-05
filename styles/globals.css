@@ -1,0 +1,55 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .css-1h4p55e-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: #31b6d9;
+} */
+.iconColor {
+  color: 'mintcream';
+}
+.css-1hsz34s-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: #31b6d9;
+}
+
+.css-11o2879-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: #31b6d9;
+}
+/*
+.css-1t29gy6-MuiToolbar-root {
+  background-color: #87cddf;
+} */
+
+.css-cveggr-MuiListItemIcon-root {
+  color: white;
+}
+/* .css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #31b6d9;
+} */
+
+/* .css-1w1rijm-MuiButtonBase-root-MuiButton-root {
+  background-color: #87cddf;
+} */
+#root > div > div {
+  display: inline-block;
+}
+
+.css-1v5z4dq-MuiPaper-root-MuiCard-root {
+  width: 50%;
+}
+/* .card {
+  width: '50%';
+} */
