@@ -4,7 +4,7 @@
 //import Container from './components/Container'
 //import Drawer from './components/drawer'
 import Drawer from './components/drawer'
-import Card from './components/card'
+//import Card from './components/card'
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <div>
         {/* <myDrawer /> */}
         <Drawer />
-        <Card />
+        {/* <Card /> */}
       {/* <div className="flex w-screen h-screen" >
         <div className="w-screen ">
           <Header />
