@@ -25,11 +25,11 @@ const card = (
       <Typography variant="h5" component="div">
         You’re all settled up. Awesome!
       </Typography>
-      {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
         To add a new expense, click the orange “Add an expense” button.
-      </Typography> */}
+      </Typography>
       <Typography variant="body2">
-        To add a new expense, click the orange “Add an expense” button.
+        well meaning and kindly.
         <br />
         {'"a benevolent smile"'}
       </Typography>

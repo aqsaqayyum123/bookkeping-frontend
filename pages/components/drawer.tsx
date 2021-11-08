@@ -64,7 +64,7 @@ function MenuPopupState() {
       <PopupState variant="popover" popupId="demo-popup-menu">
         {(popupState) => (
           <React.Fragment>
-            <Button className='ml-auto'  {...bindTrigger(popupState)}>
+            <Button {...bindTrigger(popupState)}>
             <PersonPinIcon fontSize="large" />
             {/* My Account */}
             </Button>
@@ -131,6 +131,10 @@ export default function MiniDrawer() {
 
   return (
     <Box sx={{ display: 'flex' }}>
+      <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        </link>
+      </head>
       <CssBaseline />
       <AppBar position="fixed" open={open} style={{ background: '#87cddf' }}>
         <Toolbar >
@@ -144,15 +148,18 @@ export default function MiniDrawer() {
               ...(open && { display: 'none' }),
             }}
           >
-            <MenuIcon sx={{ color: 'black' }}/>
+          <MenuIcon sx={{ color: 'black' }}/>
           </IconButton>
-          <Typography noWrap component="div">
-          <div className='text-white flex iconColor'>
-                <ConnectWithoutContactSharpIcon fontSize="large"/>
-                <p className= 'pl-2'>Bookkeeping</p>
-            </div>
-          </Typography>
-          <MenuPopupState />
+          {/* <Typography noWrap component="div"> */}
+          <div >
+                {/* <ConnectWithoutContactSharpIcon fontSize="medium"/> */}
+               Bookkeeping
+          </div>
+          {/* </Typography> */}
+          {/* <MenuPopupState  /> */}
+          <div className="w-100">
+            <button className="btn btn-primary float-right">Profile</button>
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
