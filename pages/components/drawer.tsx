@@ -192,7 +192,7 @@ export default function MiniDrawer() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <Typography paragraph>
-          {/* paragraph */}
+        <Button>Add Expense</Button>
         </Typography>
       </Box>
     </Box>

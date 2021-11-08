@@ -23,13 +23,13 @@ const card = (
         Word of the Day
       </Typography>
       <Typography variant="h5" component="div">
-        be{bull}nev{bull}o{bull}lent
+        You’re all settled up. Awesome!
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
-        adjective
-      </Typography>
+      {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        To add a new expense, click the orange “Add an expense” button.
+      </Typography> */}
       <Typography variant="body2">
-        well meaning and kindly.
+        To add a new expense, click the orange “Add an expense” button.
         <br />
         {'"a benevolent smile"'}
       </Typography>

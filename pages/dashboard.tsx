@@ -4,15 +4,17 @@
 //import Container from './components/Container'
 //import Drawer from './components/drawer'
 import Drawer from './components/drawer'
-//import Card from './components/card'
+import Card from './components/card'
 
 
 export default function Home() {
   return (
+      <>
     <div>
         {/* <myDrawer /> */}
         <Drawer />
-        {/* <Card /> */}
+
+
       {/* <div className="flex w-screen h-screen" >
         <div className="w-screen ">
           <Header />
@@ -20,5 +22,8 @@ export default function Home() {
         </div>
       </div> */}
     </div>
+
+    <div className="flex justify-center"> <Card /></div>
+    </>
   )
 }

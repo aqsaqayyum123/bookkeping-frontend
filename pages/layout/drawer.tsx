@@ -124,8 +124,8 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader >
-            <div className='text-white font-semibold flex'>
-                <ConnectWithoutContactSharpIcon fontSize="large" />
+            <div className='text-white font-semibold flex iconColor'>
+                <ConnectWithoutContactSharpIcon fontSize="large" color= "mintcream"/>
                 <h1 className='pl-2 font-bold'>Bookkeeping</h1>
            </div>
           <IconButton onClick={handleDrawerClose}>

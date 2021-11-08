@@ -29,11 +29,12 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/roles/[id].tsx",
     "pages/layout/Registration.jsx",
     "pages/layout/RegistrationStyles.js",
     "pages/layout/Registration.jsx",
     "pages/layout/navbar.jsx",
-    "pages/layout/menuItem.js"
+    "pages/layout/menuItem.js",
+    "pages/auth/signin.jsx",
+    "pages/auth/signin.js"
   ]
 }
