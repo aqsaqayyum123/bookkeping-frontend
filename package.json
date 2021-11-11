@@ -1,49 +1,76 @@
 {
   "name": "nextapp",
-  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "lint": "next lint",
-    "start": "next start",
-    "start:dev": "NODE_ENV='development' node server.js"
-  },
+  "description": "Splitwise dashboard template based on nextjs with @paljs/ui component package",
+  "version": "0.1.0",
+  "author": "Ahmed Elywa",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "29.2.0",
+    "@ckeditor/ckeditor5-react": "3.0.2",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
-    "@material-ui/core": "^5.0.0-beta.5",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/styles": "^4.11.4",
-    "@mui/icons-material": "^5.0.5",
-    "@mui/material": "^5.0.6",
-    "@mui/styled-engine-sc": "^5.0.4",
-    "chart.js": "^3.6.0",
-    "dotenv": "^10.0.0",
+    "@mui/material": "^5.1.0",
+    "@paljs/icons": "1.0.5",
+    "@paljs/ui": "1.1.1",
+    "@tinymce/tinymce-react": "3.12.6",
+    "babel-plugin-styled-components": "^1.13.2",
     "express": "^4.17.1",
     "http-proxy-middleware": "^2.0.1",
-    "material-ui-popup-state": "^2.0.0",
-    "next": "12.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^11.1.2",
+    "next-images": "^1.8.2",
+    "next-js-suggest-input": "^1.0.2",
     "react": "17.0.2",
-    "react-chartjs-2": "^3.3.0",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "5.3.1"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "styled",
+    "oah"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "NODE_ENV='development' node server.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start --port ${PORT-4000}",
+    "export": "yarn build && next export -o _static",
+    "prepare": "husky install",
+    "prettier": "prettier --check **/*.tsx",
+    "format": "prettier -w .",
+    "prettier:fix": "prettier --write **/*.tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "husky pre-commit"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paljs/nextjs-admin-template"
+  },
+  "bugs": {
+    "url": "https://github.com/paljs/nextjs-admin-template/issues"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.3.0",
-    "@typescript-eslint/parser": "^5.3.0",
-    "autoprefixer": "^10.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "postcss": "^8.3.11",
-    "prettier": "2.4.1",
-    "tailwindcss": "^2.2.19",
-    "typescript": "^4.4.4"
+    "@types/node": "16.7.10",
+    "@types/react": "17.0.19",
+    "@types/react-dom": "17.0.9",
+    "@types/react-select": "4.0.17",
+    "@types/styled-components": "5.1.13",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.25.1",
+    "husky": "7.0.2",
+    "prettier": "2.3.2",
+    "pretty-quick": "3.1.1",
+    "react-live": "2.3.0",
+    "typescript": "4.4.2"
   }
 }

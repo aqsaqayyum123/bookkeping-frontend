@@ -43,9 +43,6 @@ a {
 /* .css-1w1rijm-MuiButtonBase-root-MuiButton-root {
   background-color: #87cddf;
 } */
-#root > div > div {
-  display: inline-block;
-}
 
 .css-1v5z4dq-MuiPaper-root-MuiCard-root {
   width: 100%;
@@ -53,3 +50,7 @@ a {
 /* .card {
   width: '50%';
 } */
+
+.ekjAKg {
+  background-color: #87cddf;
+}
