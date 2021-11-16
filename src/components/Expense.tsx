@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { server } from '../../config/index';
 import Router from 'next/router';
 export default function index({ record }) {
-
+    console.log("testing", record);
 //   async function deleteHandle(event) {
 //     event.preventDefault();
 //     const id = event.target.id;
@@ -19,16 +19,19 @@ export default function index({ record }) {
 //     const data = await response.json();
 //     Router.push('/roles');
 //   }
-//console.log("testing", record);
+
   return (
     <>
       <tr>
         <th scope="row">{record.id}</th>
-        <td>{record.name}</td>
+        <td>{record.description}</td>
+        <td>{record.email}</td>
+        <td>{record.totalamount}</td>
+        <td>{record.date}</td>
         <td>{record.createdAt}</td>
 
         <td className="text-right">
-          <Link href={`/group/${record.id}`}>
+          <Link href={`/expense/${record.id}`}>
             <a className="btn btn-info mr-2"> Edit</a>
           </Link>
           {/* <Link href="/roles"> */}

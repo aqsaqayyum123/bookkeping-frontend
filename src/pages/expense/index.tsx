@@ -14,10 +14,10 @@ const index = ({ records, headings }) => {
           <Col breakPoint={{ xs: 12, md: 12 }}>
             <Card>
               <header>
-                Groups
+                Expenses
               </header>
               <CardBody>
-                <Table fileName="Group" headings={headings} records={records}/>
+                <Table fileName="Expense" headings={headings} records={records}/>
               </CardBody>
             </Card>
           </Col>
@@ -28,10 +28,9 @@ const index = ({ records, headings }) => {
 };
 
 export const getStaticProps = async () => {
-   const res = await fetch(`${server}/api/group/groupList`);
-   //console.log("user records",res);
+   const res = await fetch(`${server}/api/expense/expenseList`);
    const records = await res.json();
-  const headings = ['#', 'Group Name', 'Created At', 'Action'];
+  const headings = ['#', 'Detail','Friends','Amount','Date', 'Created At','Action'];
   return {
     props: {
       records,

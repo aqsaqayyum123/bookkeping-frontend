@@ -16,7 +16,7 @@ const items: MenuItemType[] = [
       },
       {
         title: 'Add A New Group',
-        link: { href: '#' },
+        link: { href: '/group/create' },
       },
     ],
   },
@@ -25,16 +25,12 @@ const items: MenuItemType[] = [
     icon: { name: 'person-add-outline' },
     children: [
       {
-        title: 'View Friends',
-        link: { href: '#' },
-      },
-      {
-        title: 'Add A New Friend',
-        link: { href: '#' },
+        title: 'List Friends',
+        link: { href: '/friend' },
       },
       {
         title: 'Invite Friends',
-        link: { href: '#' },
+        link: { href: '/friend/invite' },
       },
     ],
   },
@@ -43,12 +39,12 @@ const items: MenuItemType[] = [
     icon: { name: 'clipboard-outline' },
     children: [
       {
-        title: 'View Expenses',
-        link: { href: '#' },
+        title: 'List Expenses',
+        link: { href: '/expense' },
       },
       {
-        title: 'Add Expense',
-        link: { href: '#' },
+        title: 'Add an Expense',
+        link: { href: '/expense/create' },
       },
     ],
   },

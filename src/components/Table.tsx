@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
-// import QuestionBank from './QuestionBank';
 import Group from './Group';
-// import User from './User';
-// import Question from './Question';
+import Friend from './Friend';
+import Expense from './Expense';
+
 
 const index = ({ fileName, headings, records }) => {
-  console.log("testingrecords",records);
+  //console.log("testingrecords",records.group);
   return (
     <>
 
@@ -19,21 +19,16 @@ const index = ({ fileName, headings, records }) => {
           </tr>
         </thead>
         <tbody>
-            {fileName == 'Group' && records.map((record) => (
+            {fileName == 'Group' && records.group.map((record) => (
                 <Group record={record} />
             ))}
-            {/* {fileName == 'QuestionBank' && records.map((record) => (
-                <QuestionBank record={record} />
+            {fileName == 'Friend' && records.friend.map((record) => (
+                <Friend record={record} />
             ))}
-            {fileName == 'Role' && records.map((record) => (
-                <Role record={record} />
+             {fileName == 'Expense' && records.expense.map((record) => (
+                <Expense record={record} />
             ))}
-            {fileName == 'User' && records.map((record) => (
-                <User record={record} />
-            ))}
-            {fileName == 'Question' && records.map((record) => (
-                <Question record={record} />
-            ))} */}
+
         </tbody>
       </table>
     </>

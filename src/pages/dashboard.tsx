@@ -49,7 +49,11 @@ const index = () => {
         <div style={{ width: '70%' }}>
           <div style={{ display: 'inline-flex' }}>
             <h4>Dashboard</h4>
-            <div style={{ right: '25em', position: 'absolute',top:'6.6em' }}><Button type="submit" variant="contained" sx={{ mt: 3, mb: 2, marginTop: 'auto' }} >Add Expense</Button></div>
+            <div style={{ right: '25em', position: 'absolute',top:'6.6em' }}>
+            <Link href={`/expense/create`}>
+                <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2, marginTop: 'auto' }} >Add an Expense</Button>
+            </Link>
+            </div>
           </div>
           <Card style={{ marginTop: '3rem'}}>
             <CardBody>
@@ -63,7 +67,7 @@ const index = () => {
 
                     <Col breakPoint={{ xs: 12, md: 6 }}>
                       <h3>You’re all settled up. Awesome!</h3>
-                      <h6>To add a new expense, click the orange “Add an expense” button.</h6>
+                      <h6>To add a new expense, click the blue “Add an expense” button.</h6>
                     </Col>
                 </Row>
             </CardBody>
